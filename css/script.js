@@ -67,3 +67,56 @@ let info=document.getElementById("info");
  blick.addEventListener("click",function(){
    navebar();
  })
+ let formtext=document.getElementById("form-text");
+ 
+ let map=document.getElementById("map");
+const take=["Hi","Frd","Eppadi","Irukkinga?"];
+function text(){
+   formtext.innerText="Hi Buddy" +" "+map.value+" "+ "How Are YOu ?";
+ }
+//  var formcontent=document.getElementById("form-content");
+ var level=0;
+ var len=0;
+ var plus="";
+ var inn="";
+ var z="Hi Frd Eppadi Irukkinga ?";
+function span(){
+    if(take.length==len){
+         clearTimeout(span);
+         document.getElementById("form-content").textContent=z;
+         
+    }
+
+   plus=take[len];
+   inn=plus.slice(0,++level);
+   console.log(inn);
+   
+   document.getElementById("form-content").textContent=inn;
+   
+   if(plus.length===inn.length){
+      len++;
+      level=0;
+   };
+   setTimeout(span,500);
+}
+
+
+
+ let up=document.getElementById("up");
+ up.addEventListener("click",function(){
+   text();
+   span();
+   formcontent="";
+   map.value="";
+   
+   // document.getElementById("form-content").textContent=z;
+ });
+ let logo=document.getElementById("logo");
+  function lo(){
+   var change=Math.ceil(Math.random()*16777006).toString();
+   logo.style.backgroundColor="#"+change;
+  };
+  setInterval(lo,500)
+
+  
+ 
