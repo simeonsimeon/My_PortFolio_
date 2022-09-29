@@ -127,13 +127,15 @@ function span(){
   }
   setInterval(chat,450);
   
-//   function chatt(){
-//     change=Math.ceil(Math.random()*256).toString();
-//   let lo=document.getElementById("lo");
-//    lo.style.boxShadow="0,0,10px,-5px","#"+change;
+  function chatt(){
+    change=Math.ceil(Math.random()*256).toString();
+    console.log(change);
+  let lo=document.getElementById("lo");
+   lo.style.boxShadow="0,0,50px","#"+change;
+   console.log( lo.style.boxShadow="0,0,50px","#"+change);
   
-//   }
-//   setInterval(chatt,450);
+  }
+  setInterval(chatt,450);
 
 //   let a=10;
 //   let b=30;
