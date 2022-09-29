@@ -111,12 +111,55 @@ function span(){
    
    // document.getElementById("form-content").textContent=z;
  });
- let logo=document.getElementById("logo");
-  function lo(){
-   var change=Math.ceil(Math.random()*16777006).toString();
-   logo.style.backgroundColor="#"+change;
-  };
-  setInterval(lo,500)
-
+//  let logo=document.getElementById("logo");
+//   function lo(){
+//    var change=Math.ceil(Math.random()*16777006).toString();
+//    logo.style.backgroundColor="#"+change;
+//   };
+//   setInterval(lo,500);
+  function chat(){
+   var change=Math.ceil(Math.random()*256).toString();
+  let chh=document.getElementsByClassName("chh");
+  for(let i=0;i<chh.length;i++){
+   // console.log(chh[i]);
+   chh[i].style.backgroundColor="#"+change;
+  }
+  }
+  setInterval(chat,450);
   
+//   function chatt(){
+//     change=Math.ceil(Math.random()*256).toString();
+//   let lo=document.getElementById("lo");
+//    lo.style.boxShadow="0,0,10px,-5px","#"+change;
+  
+//   }
+//   setInterval(chatt,450);
+
+//   let a=10;
+//   let b=30;
+//    var ans;
+//    var ans1;
+//    var ans2;
+//     function simeon(what,what1){
+//         ans=what+what1;
+//         ans1=what-what1;
+//         ans2=what*what1;
+//     }
+//     simeon(a,b);
+//     let suman=document.getElementById("suman");
+//     let p1=document.createElement("p");
+//     let p2=document.createElement("p");
+//     let p3=document.createElement("p");
+//    p1.innerHTML=ans;
+//    p2.innerHTML=ans1;
+//    p3.innerHTML=ans2;
+//    suman.appendChild(p1)
+//    suman.appendChild(p2)
+//    suman.appendChild(p3)
+   
+
+
+
+
+
  
